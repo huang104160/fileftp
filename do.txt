@@ -1,0 +1,14 @@
+## server 启动方式：
+python -m uploader.server
+
+## client 安装：
+python3 setup.py install 
+
+## client 使用:
+from uploader import client
+
+c = client.Client('localhost', '7322')
+c.upload('taskid', 'file_abs_path')  #上传
+
+c.download('taskid', 'filename', 'target_dir') # 下载
+ 
